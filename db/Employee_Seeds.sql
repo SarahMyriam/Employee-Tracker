@@ -14,7 +14,7 @@ VALUE ("General Manager", 250000, 1),
         
 
 -- Inserts a set of records into the "employee" table
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, department_id)
 VALUE   ("Alberto", "Bossi", 1, 3),
         ("Nicklaus", "Mickaelson", 2, 1),
         ("Dorine", "Angui", 3, NULL),
