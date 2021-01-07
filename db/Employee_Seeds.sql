@@ -14,14 +14,17 @@ VALUE ("General Manager", 250000, 1),
         
 
 -- Inserts a set of records into the "employee" table
-INSERT INTO employee (first_name, last_name, role_id, department_id)
-VALUE   ("Alberto", "Bossi", 1, 3),
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUE   ("Alberto", "Bossi", 1, NULL);
+        INSERT INTO employee (first_name, last_name, role_id, manager_id)
+        --EVERY EMPLOYEE WILL HAVE ALBERTO AS A MANAGER 
         ("Nicklaus", "Mickaelson", 2, 1),
-        ("Dorine", "Angui", 3, NULL),
-        ("Kevin", "Tompson", 4, 3),
+        ("Dorine", "Angui", 3,NULL ),
+        ("Kevin", "Tompson", 4, 1),
         ("Damon", "Salvator", 5, NULL),
         ("Myriam", "Baillie", 6, NULL),
-        ("Travis", "Parker", 7, 6);
+        ("Travis", "Parker", 7,1);
+        
 
 
 SELECT * FROM department;
