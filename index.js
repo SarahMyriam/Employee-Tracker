@@ -20,3 +20,16 @@ const questions = [
     choices: ["view all employee", "update an employee roles","add an employee",
             "view all department","add department", "view roles", "add roles"]
 }];
+
+
+// function to initialize program
+function init() {
+//when question is pass to inquerer,
+return inquirer.prompt(questions).then(function(answers){
+    console.log(answers);
+
+})
+
+}
+// function call to initialize program
+init();
