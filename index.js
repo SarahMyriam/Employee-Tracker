@@ -20,7 +20,9 @@ const questions = [{
 // function to initialize program
 function init() {
     //when question is pass to inquerer,
-    return inquirer.prompt(questions).then(function (answers) {
+    return inquirer.prompt(questions)
+
+    .then(function (answers) {
         console.log(answers);
 
         //if select view all employee
@@ -91,8 +93,7 @@ function init() {
 
         }
 
-    })
-
-}
+    )}
+    
 // function call to initialize program
 init();
