@@ -70,8 +70,22 @@ function init() {
         }
 
         //view roles
+        if(answers.action === "view roles"){
+            db.searchAllEmployees().then(
+                function(result){
+                    console.table(result);
+                }
+            )
+        }
 
         //add roles
+        if(answers.action === "add roles"){
+            db.searchAllEmployees().then(
+                function(result){
+                    console.table(result);
+                }
+            )
+        }
 
         
 
