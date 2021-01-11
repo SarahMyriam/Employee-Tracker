@@ -52,6 +52,26 @@ function init() {
             )
 
         }
+        //view all department
+        if(answers.action === "view all department"){
+            db.searchAllEmployees().then(
+                function(result){
+                    console.table(result);
+                }
+            )
+        }
+        //add department
+        if(answers.action === "add department"){
+            db.searchAllEmployees().then(
+                function(result){
+                    console.table(result);
+                }
+            )
+        }
+
+        //view roles
+
+        //add roles
 
         
 
